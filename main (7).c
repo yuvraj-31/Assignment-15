@@ -26,8 +26,10 @@ int duplicate(int b[],int n)
     {
         for(int j=i+1;j<n;j++)
         {
-            if(b[i]==b[j])
-               count++;
+            if(b[i]==b[j] && b[i]=-1)
+            {count++;
+               b[j]=-1;
+            }
         }
     }
     return count;
